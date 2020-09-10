@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0680E2A207CA4FF7EB5313F2 /* Pods_Winnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1266E1F585A4A627B929420 /* Pods_Winnect.framework */; };
+		4CCED93740C9A3C77D10072A /* Pods_WinnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E0C03F1C46C0B60451B7A5 /* Pods_WinnectTests.framework */; };
+		8526C50E923271855A503579 /* Pods_Winnect_WinnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33A3C0241106ED6B0C6344E /* Pods_Winnect_WinnectUITests.framework */; };
+		A60EE4D624D205FD00FA20DE /* DirectMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60EE4D524D205FD00FA20DE /* DirectMessageController.swift */; };
+		A64BD81F2496AD4500B686DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD81E2496AD4500B686DA /* AppDelegate.swift */; };
+		A64BD8212496AD4500B686DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD8202496AD4500B686DA /* ViewController.swift */; };
+		A64BD8262496AD4700B686DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64BD8252496AD4700B686DA /* Assets.xcassets */; };
+		A64BD8292496AD4700B686DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64BD8272496AD4700B686DA /* LaunchScreen.storyboard */; };
+		A64BD8342496AD4700B686DA /* WinnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD8332496AD4700B686DA /* WinnectTests.swift */; };
+		A64BD83F2496AD4700B686DA /* WinnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD83E2496AD4700B686DA /* WinnectUITests.swift */; };
+		A64BD8502496BAF500B686DA /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD84F2496BAF500B686DA /* InitialViewController.swift */; };
+		A64BD8522496BB0C00B686DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD8512496BB0C00B686DA /* LoginViewController.swift */; };
+		A64BD8542496BB2400B686DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD8532496BB2400B686DA /* SignUpViewController.swift */; };
+		A64BD8562496BB3800B686DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD8552496BB3800B686DA /* MainViewController.swift */; };
+		A64BD85B2496F82500B686DA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD85A2496F82500B686DA /* Utilities.swift */; };
+		A64BD85F249814B900B686DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A64BD85E249814B900B686DA /* GoogleService-Info.plist */; };
+		A6BAB17624C79CB1007989DF /* EditBiographyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BAB17524C79CB1007989DF /* EditBiographyController.swift */; };
+		A6BBA98324A5596800DCE720 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA98224A5596800DCE720 /* NotificationCell.swift */; };
+		A6BBA98724A55B5A00DCE720 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA98624A55B5A00DCE720 /* NotificationsController.swift */; };
+		A6C0A9FE24AE469F00944EFC /* AppointmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0A9FD24AE469F00944EFC /* AppointmentController.swift */; };
+		A6C0AA0024AE71BE00944EFC /* AppointmentTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0A9FF24AE71BE00944EFC /* AppointmentTimeController.swift */; };
+		A6C0AA0224AE817000944EFC /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0AA0124AE817000944EFC /* TimeCell.swift */; };
+		A6C0AA0424AFB8BE00944EFC /* TutorProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0AA0324AFB8BE00944EFC /* TutorProfileController.swift */; };
+		A6DD81A3249ABF7600F48BCA /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD81A2249ABF7600F48BCA /* CalendarController.swift */; };
+		A6DD81A5249AEF6D00F48BCA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD81A4249AEF6D00F48BCA /* ProfileController.swift */; };
+		A6EFAACB24AD5FA800538DF6 /* TutorPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFAACA24AD5FA800538DF6 /* TutorPageController.swift */; };
+		A6F646A324AFFFBF00FC46BF /* AvailabilityViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F646A224AFFFBF00FC46BF /* AvailabilityViewControllers.swift */; };
+		A6FD89FC249D3CCF003D2693 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD89FB249D3CCF003D2693 /* HomeController.swift */; };
+		A6FD89FE249EBBE3003D2693 /* TutorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD89FD249EBBE3003D2693 /* TutorCell.swift */; };
+		A6FD8A00249EC1C0003D2693 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD89FF249EC1C0003D2693 /* Tutor.swift */; };
+		A6FD8A03249FEC47003D2693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD8A01249FEC47003D2693 /* Main.storyboard */; };
+		A6FD8A0524A28909003D2693 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD8A0424A28909003D2693 /* ApplicationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A64BD8302496AD4700B686DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A64BD8132496AD4500B686DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A64BD81A2496AD4500B686DA;
+			remoteInfo = Winnect;
+		};
+		A64BD83B2496AD4700B686DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A64BD8132496AD4500B686DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A64BD81A2496AD4500B686DA;
+			remoteInfo = Winnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C9040B71F06DC1DBB6763E /* Pods-WinnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinnectTests.debug.xcconfig"; path = "Target Support Files/Pods-WinnectTests/Pods-WinnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		08751C971C9C46F04EC1290C /* Pods-WinnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinnectTests.release.xcconfig"; path = "Target Support Files/Pods-WinnectTests/Pods-WinnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		107C2DA47F1E839B0E23B080 /* Pods-Winnect-WinnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winnect-WinnectUITests.release.xcconfig"; path = "Target Support Files/Pods-Winnect-WinnectUITests/Pods-Winnect-WinnectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F2BB651C5616CA20D3C9598 /* Pods-Winnect-WinnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winnect-WinnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-Winnect-WinnectUITests/Pods-Winnect-WinnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B78BE5B1235E0419EE9DE72 /* Pods-Winnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winnect.debug.xcconfig"; path = "Target Support Files/Pods-Winnect/Pods-Winnect.debug.xcconfig"; sourceTree = "<group>"; };
+		A60EE4D524D205FD00FA20DE /* DirectMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageController.swift; sourceTree = "<group>"; };
+		A64BD81B2496AD4500B686DA /* Winnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64BD81E2496AD4500B686DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A64BD8202496AD4500B686DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		A64BD8252496AD4700B686DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A64BD8282496AD4700B686DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A64BD82A2496AD4700B686DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64BD82F2496AD4700B686DA /* WinnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64BD8332496AD4700B686DA /* WinnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnectTests.swift; sourceTree = "<group>"; };
+		A64BD8352496AD4700B686DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64BD83A2496AD4700B686DA /* WinnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64BD83E2496AD4700B686DA /* WinnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnectUITests.swift; sourceTree = "<group>"; };
+		A64BD8402496AD4700B686DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64BD84F2496BAF500B686DA /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		A64BD8512496BB0C00B686DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A64BD8532496BB2400B686DA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A64BD8552496BB3800B686DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A64BD85A2496F82500B686DA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A64BD85E249814B900B686DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6BAB17524C79CB1007989DF /* EditBiographyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBiographyController.swift; sourceTree = "<group>"; };
+		A6BBA98224A5596800DCE720 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		A6BBA98624A55B5A00DCE720 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		A6C0A9FD24AE469F00944EFC /* AppointmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentController.swift; sourceTree = "<group>"; };
+		A6C0A9FF24AE71BE00944EFC /* AppointmentTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTimeController.swift; sourceTree = "<group>"; };
+		A6C0AA0124AE817000944EFC /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		A6C0AA0324AFB8BE00944EFC /* TutorProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorProfileController.swift; sourceTree = "<group>"; };
+		A6DD81A2249ABF7600F48BCA /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		A6DD81A4249AEF6D00F48BCA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		A6EFAACA24AD5FA800538DF6 /* TutorPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorPageController.swift; sourceTree = "<group>"; };
+		A6F646A224AFFFBF00FC46BF /* AvailabilityViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityViewControllers.swift; sourceTree = "<group>"; };
+		A6FD89FB249D3CCF003D2693 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		A6FD89FD249EBBE3003D2693 /* TutorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorCell.swift; sourceTree = "<group>"; };
+		A6FD89FF249EC1C0003D2693 /* Tutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
+		A6FD8A02249FEC47003D2693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6FD8A0424A28909003D2693 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		A7E0C03F1C46C0B60451B7A5 /* Pods_WinnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WinnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33A3C0241106ED6B0C6344E /* Pods_Winnect_WinnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Winnect_WinnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC98CE05268F75E59AB35A98 /* Pods-Winnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winnect.release.xcconfig"; path = "Target Support Files/Pods-Winnect/Pods-Winnect.release.xcconfig"; sourceTree = "<group>"; };
+		F1266E1F585A4A627B929420 /* Pods_Winnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Winnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A64BD8182496AD4500B686DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0680E2A207CA4FF7EB5313F2 /* Pods_Winnect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BD82C2496AD4700B686DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCED93740C9A3C77D10072A /* Pods_WinnectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BD8372496AD4700B686DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8526C50E923271855A503579 /* Pods_Winnect_WinnectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A64BD8122496AD4500B686DA = {
+			isa = PBXGroup;
+			children = (
+				A64BD81D2496AD4500B686DA /* Winnect */,
+				A64BD8322496AD4700B686DA /* WinnectTests */,
+				A64BD83D2496AD4700B686DA /* WinnectUITests */,
+				A64BD81C2496AD4500B686DA /* Products */,
+				C8061FB29D3F6B4A5975ADA4 /* Pods */,
+				F4D849AD85AF4F060AC57C4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A64BD81C2496AD4500B686DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A64BD81B2496AD4500B686DA /* Winnect.app */,
+				A64BD82F2496AD4700B686DA /* WinnectTests.xctest */,
+				A64BD83A2496AD4700B686DA /* WinnectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A64BD81D2496AD4500B686DA /* Winnect */ = {
+			isa = PBXGroup;
+			children = (
+				A64BD85E249814B900B686DA /* GoogleService-Info.plist */,
+				A64BD8572496F7E600B686DA /* Resources */,
+				A64BD84C2496AD9700B686DA /* ViewControllers */,
+				A64BD8252496AD4700B686DA /* Assets.xcassets */,
+				A64BD8272496AD4700B686DA /* LaunchScreen.storyboard */,
+				A6FD8A01249FEC47003D2693 /* Main.storyboard */,
+				A64BD81E2496AD4500B686DA /* AppDelegate.swift */,
+				A64BD82A2496AD4700B686DA /* Info.plist */,
+			);
+			path = Winnect;
+			sourceTree = "<group>";
+		};
+		A64BD8322496AD4700B686DA /* WinnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				A64BD8332496AD4700B686DA /* WinnectTests.swift */,
+				A64BD8352496AD4700B686DA /* Info.plist */,
+			);
+			path = WinnectTests;
+			sourceTree = "<group>";
+		};
+		A64BD83D2496AD4700B686DA /* WinnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A64BD83E2496AD4700B686DA /* WinnectUITests.swift */,
+				A64BD8402496AD4700B686DA /* Info.plist */,
+			);
+			path = WinnectUITests;
+			sourceTree = "<group>";
+		};
+		A64BD84C2496AD9700B686DA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6DD81A1249ABF5600F48BCA /* TabBarControllers */,
+				A64BD8202496AD4500B686DA /* ViewController.swift */,
+				A64BD84F2496BAF500B686DA /* InitialViewController.swift */,
+				A64BD8512496BB0C00B686DA /* LoginViewController.swift */,
+				A64BD8532496BB2400B686DA /* SignUpViewController.swift */,
+				A64BD8552496BB3800B686DA /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A64BD8572496F7E600B686DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A64BD85A2496F82500B686DA /* Utilities.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A6DD81A1249ABF5600F48BCA /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6DD81A2249ABF7600F48BCA /* CalendarController.swift */,
+				A6DD81A4249AEF6D00F48BCA /* ProfileController.swift */,
+				A6FD89FB249D3CCF003D2693 /* HomeController.swift */,
+				A6FD89FD249EBBE3003D2693 /* TutorCell.swift */,
+				A6FD89FF249EC1C0003D2693 /* Tutor.swift */,
+				A6FD8A0424A28909003D2693 /* ApplicationController.swift */,
+				A6BBA98224A5596800DCE720 /* NotificationCell.swift */,
+				A6BBA98624A55B5A00DCE720 /* NotificationsController.swift */,
+				A6EFAACA24AD5FA800538DF6 /* TutorPageController.swift */,
+				A6C0A9FD24AE469F00944EFC /* AppointmentController.swift */,
+				A6C0A9FF24AE71BE00944EFC /* AppointmentTimeController.swift */,
+				A6C0AA0124AE817000944EFC /* TimeCell.swift */,
+				A6C0AA0324AFB8BE00944EFC /* TutorProfileController.swift */,
+				A6F646A224AFFFBF00FC46BF /* AvailabilityViewControllers.swift */,
+				A6BAB17524C79CB1007989DF /* EditBiographyController.swift */,
+				A60EE4D524D205FD00FA20DE /* DirectMessageController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		C8061FB29D3F6B4A5975ADA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B78BE5B1235E0419EE9DE72 /* Pods-Winnect.debug.xcconfig */,
+				EC98CE05268F75E59AB35A98 /* Pods-Winnect.release.xcconfig */,
+				7F2BB651C5616CA20D3C9598 /* Pods-Winnect-WinnectUITests.debug.xcconfig */,
+				107C2DA47F1E839B0E23B080 /* Pods-Winnect-WinnectUITests.release.xcconfig */,
+				02C9040B71F06DC1DBB6763E /* Pods-WinnectTests.debug.xcconfig */,
+				08751C971C9C46F04EC1290C /* Pods-WinnectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4D849AD85AF4F060AC57C4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1266E1F585A4A627B929420 /* Pods_Winnect.framework */,
+				C33A3C0241106ED6B0C6344E /* Pods_Winnect_WinnectUITests.framework */,
+				A7E0C03F1C46C0B60451B7A5 /* Pods_WinnectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A64BD81A2496AD4500B686DA /* Winnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64BD8432496AD4700B686DA /* Build configuration list for PBXNativeTarget "Winnect" */;
+			buildPhases = (
+				F7AC351F5239CCE212F63B8F /* [CP] Check Pods Manifest.lock */,
+				A64BD8172496AD4500B686DA /* Sources */,
+				A64BD8182496AD4500B686DA /* Frameworks */,
+				A64BD8192496AD4500B686DA /* Resources */,
+				27979194509F467E9889243A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Winnect;
+			productName = Winnect;
+			productReference = A64BD81B2496AD4500B686DA /* Winnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A64BD82E2496AD4700B686DA /* WinnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64BD8462496AD4700B686DA /* Build configuration list for PBXNativeTarget "WinnectTests" */;
+			buildPhases = (
+				98C06F2E6F65F7615438792A /* [CP] Check Pods Manifest.lock */,
+				A64BD82B2496AD4700B686DA /* Sources */,
+				A64BD82C2496AD4700B686DA /* Frameworks */,
+				A64BD82D2496AD4700B686DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A64BD8312496AD4700B686DA /* PBXTargetDependency */,
+			);
+			name = WinnectTests;
+			productName = WinnectTests;
+			productReference = A64BD82F2496AD4700B686DA /* WinnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A64BD8392496AD4700B686DA /* WinnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64BD8492496AD4700B686DA /* Build configuration list for PBXNativeTarget "WinnectUITests" */;
+			buildPhases = (
+				702B658729CC49794F4E04B4 /* [CP] Check Pods Manifest.lock */,
+				A64BD8362496AD4700B686DA /* Sources */,
+				A64BD8372496AD4700B686DA /* Frameworks */,
+				A64BD8382496AD4700B686DA /* Resources */,
+				91CB8782BCF8F4811E01C4B2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A64BD83C2496AD4700B686DA /* PBXTargetDependency */,
+			);
+			name = WinnectUITests;
+			productName = WinnectUITests;
+			productReference = A64BD83A2496AD4700B686DA /* WinnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A64BD8132496AD4500B686DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Jordan Hanley";
+				TargetAttributes = {
+					A64BD81A2496AD4500B686DA = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					A64BD82E2496AD4700B686DA = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A64BD81A2496AD4500B686DA;
+					};
+					A64BD8392496AD4700B686DA = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A64BD81A2496AD4500B686DA;
+					};
+				};
+			};
+			buildConfigurationList = A64BD8162496AD4500B686DA /* Build configuration list for PBXProject "Winnect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A64BD8122496AD4500B686DA;
+			productRefGroup = A64BD81C2496AD4500B686DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A64BD81A2496AD4500B686DA /* Winnect */,
+				A64BD82E2496AD4700B686DA /* WinnectTests */,
+				A64BD8392496AD4700B686DA /* WinnectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A64BD8192496AD4500B686DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64BD8292496AD4700B686DA /* LaunchScreen.storyboard in Resources */,
+				A64BD8262496AD4700B686DA /* Assets.xcassets in Resources */,
+				A64BD85F249814B900B686DA /* GoogleService-Info.plist in Resources */,
+				A6FD8A03249FEC47003D2693 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BD82D2496AD4700B686DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BD8382496AD4700B686DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27979194509F467E9889243A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Winnect/Pods-Winnect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Winnect/Pods-Winnect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Winnect/Pods-Winnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		702B658729CC49794F4E04B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Winnect-WinnectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91CB8782BCF8F4811E01C4B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Winnect-WinnectUITests/Pods-Winnect-WinnectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Winnect-WinnectUITests/Pods-Winnect-WinnectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Winnect-WinnectUITests/Pods-Winnect-WinnectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C06F2E6F65F7615438792A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WinnectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7AC351F5239CCE212F63B8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Winnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A64BD8172496AD4500B686DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FD89FE249EBBE3003D2693 /* TutorCell.swift in Sources */,
+				A64BD8522496BB0C00B686DA /* LoginViewController.swift in Sources */,
+				A64BD8502496BAF500B686DA /* InitialViewController.swift in Sources */,
+				A6C0AA0224AE817000944EFC /* TimeCell.swift in Sources */,
+				A6EFAACB24AD5FA800538DF6 /* TutorPageController.swift in Sources */,
+				A64BD85B2496F82500B686DA /* Utilities.swift in Sources */,
+				A6FD8A00249EC1C0003D2693 /* Tutor.swift in Sources */,
+				A64BD8212496AD4500B686DA /* ViewController.swift in Sources */,
+				A6BBA98324A5596800DCE720 /* NotificationCell.swift in Sources */,
+				A6FD8A0524A28909003D2693 /* ApplicationController.swift in Sources */,
+				A6FD89FC249D3CCF003D2693 /* HomeController.swift in Sources */,
+				A6C0AA0024AE71BE00944EFC /* AppointmentTimeController.swift in Sources */,
+				A6F646A324AFFFBF00FC46BF /* AvailabilityViewControllers.swift in Sources */,
+				A64BD81F2496AD4500B686DA /* AppDelegate.swift in Sources */,
+				A6DD81A5249AEF6D00F48BCA /* ProfileController.swift in Sources */,
+				A60EE4D624D205FD00FA20DE /* DirectMessageController.swift in Sources */,
+				A64BD8542496BB2400B686DA /* SignUpViewController.swift in Sources */,
+				A6C0A9FE24AE469F00944EFC /* AppointmentController.swift in Sources */,
+				A6BBA98724A55B5A00DCE720 /* NotificationsController.swift in Sources */,
+				A6DD81A3249ABF7600F48BCA /* CalendarController.swift in Sources */,
+				A6BAB17624C79CB1007989DF /* EditBiographyController.swift in Sources */,
+				A6C0AA0424AFB8BE00944EFC /* TutorProfileController.swift in Sources */,
+				A64BD8562496BB3800B686DA /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BD82B2496AD4700B686DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64BD8342496AD4700B686DA /* WinnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BD8362496AD4700B686DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64BD83F2496AD4700B686DA /* WinnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A64BD8312496AD4700B686DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A64BD81A2496AD4500B686DA /* Winnect */;
+			targetProxy = A64BD8302496AD4700B686DA /* PBXContainerItemProxy */;
+		};
+		A64BD83C2496AD4700B686DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A64BD81A2496AD4500B686DA /* Winnect */;
+			targetProxy = A64BD83B2496AD4700B686DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A64BD8272496AD4700B686DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A64BD8282496AD4700B686DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A6FD8A01249FEC47003D2693 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FD8A02249FEC47003D2693 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A64BD8412496AD4700B686DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A64BD8422496AD4700B686DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A64BD8442496AD4700B686DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B78BE5B1235E0419EE9DE72 /* Pods-Winnect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Winnect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.winnect.Winnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A64BD8452496AD4700B686DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC98CE05268F75E59AB35A98 /* Pods-Winnect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Winnect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.winnect.Winnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A64BD8472496AD4700B686DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C9040B71F06DC1DBB6763E /* Pods-WinnectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WinnectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.winnect.WinnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Winnect.app/Winnect";
+			};
+			name = Debug;
+		};
+		A64BD8482496AD4700B686DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08751C971C9C46F04EC1290C /* Pods-WinnectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WinnectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.winnect.WinnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Winnect.app/Winnect";
+			};
+			name = Release;
+		};
+		A64BD84A2496AD4700B686DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2BB651C5616CA20D3C9598 /* Pods-Winnect-WinnectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB436A2753;
+				INFOPLIST_FILE = WinnectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.winnect.WinnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Winnect;
+			};
+			name = Debug;
+		};
+		A64BD84B2496AD4700B686DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107C2DA47F1E839B0E23B080 /* Pods-Winnect-WinnectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB436A2753;
+				INFOPLIST_FILE = WinnectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.winnect.WinnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Winnect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A64BD8162496AD4500B686DA /* Build configuration list for PBXProject "Winnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BD8412496AD4700B686DA /* Debug */,
+				A64BD8422496AD4700B686DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64BD8432496AD4700B686DA /* Build configuration list for PBXNativeTarget "Winnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BD8442496AD4700B686DA /* Debug */,
+				A64BD8452496AD4700B686DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64BD8462496AD4700B686DA /* Build configuration list for PBXNativeTarget "WinnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BD8472496AD4700B686DA /* Debug */,
+				A64BD8482496AD4700B686DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64BD8492496AD4700B686DA /* Build configuration list for PBXNativeTarget "WinnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BD84A2496AD4700B686DA /* Debug */,
+				A64BD84B2496AD4700B686DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A64BD8132496AD4500B686DA /* Project object */;
+}
